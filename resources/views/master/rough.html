@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate exercitationem atque enim ut eos. Labore quidem quasi obcaecati saepe debitis!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti at reprehenderit, asperiores odio possimus natus ipsa pariatur itaque, rerum sapiente accusamus assumenda cumque sunt temporibus. Similique, sequi mollitia culpa harum dolorem commodi explicabo nemo pariatur quae minus vitae odit accusamus repellendus unde, excepturi aliquid facilis fugiat alias nam. Totam itaque vero rerum reprehenderit inventore tempora iure ea, voluptas cupiditate repellat, nemo natus quam eos iusto non ipsa debitis accusamus quisquam! Culpa rerum deserunt ut reprehenderit natus facere necessitatibus quasi adipisci labore? Minus, distinctio! Itaque impedit expedita repudiandae at fuga, temporibus ipsam voluptatibus. Vitae quam provident quis. Explicabo commodi recusandae amet tenetur excepturi quisquam consequatur expedita minus, totam a dolor voluptas nesciunt non laudantium fugit voluptate ut, aut maiores magni aperiam qui dicta accusamus. Commodi natus cumque iure consequuntur, quidem labore reiciendis dolorum optio tempora. Magnam id perspiciatis incidunt quo, ab placeat cupiditate praesentium consequuntur maiores non animi. Eveniet ipsam, sapiente aspernatur, ex at dolores rerum mollitia numquam assumenda porro, ullam autem. Beatae voluptatem similique, nisi velit accusamus voluptatum tempora fugiat hic odio quo et aliquid! Eaque eius libero explicabo, dicta deserunt repellendus voluptas dignissimos, ullam accusantium maiores molestiae. Labore accusantium deserunt doloribus nam in! Beatae natus exercitationem hic ea, atque nostrum ab, eaque velit, dicta accusantium fuga quidem eligendi quasi perferendis ratione explicabo. Qui voluptate maiores nisi omnis velit eos sit quaerat, voluptatibus ut. Quia asperiores, distinctio a corporis aliquid ea cumque. Nostrum cum odit eaque modi animi reprehenderit enim consectetur iste nulla explicabo doloribus sunt porro cumque, deleniti debitis ipsam incidunt commodi ipsa placeat repudiandae quidem nesciunt velit facilis! Nemo neque eius nesciunt vel. Explicabo eum obcaecati consequatur itaque ad odio deleniti fugiat, neque tempora velit reprehenderit eos minima quam, harum illum suscipit perferendis possimus culpa officiis hic? Facilis recusandae esse adipisci similique cum sequi reiciendis veniam officiis illum ullam, ut modi rerum possimus molestias laudantium nihil corporis ipsum sint reprehenderit quaerat dolore optio eligendi. Commodi quisquam excepturi dolores aperiam temporibus. Error, neque! Amet unde itaque, distinctio reiciendis corrupti molestiae sed dolorem ipsum reprehenderit inventore, explicabo iure vitae suscipit voluptatibus voluptatem perferendis quibusdam maiores iste libero error consectetur. Illum maiores enim ab ducimus magni accusantium. Vero et dignissimos cum nostrum repellat quas veritatis doloribus laboriosam tempora voluptate, provident consequuntur architecto vel corporis nihil? Neque enim accusantium aut blanditiis omnis, ipsum quos eum sint, accusamus quo animi impedit cupiditate tempore maiores sequi itaque repellendus harum qui quod optio at earum deleniti, nulla totam. Asperiores soluta quod voluptatem fugiat, nostrum et assumenda! Quas perspiciatis quaerat eum nam repellendus tempore illo dolorem similique laborum sit ratione nulla, at delectus nesciunt nihil consectetur expedita. At saepe quia fugiat! Est, voluptatibus quasi! Quas suscipit dolore dolorem, blanditiis unde nesciunt dolorum magnam eaque cumque odio maxime in molestias quibusdam harum animi reprehenderit vel doloremque, inventore eum. Sapiente commodi voluptatibus asperiores, sequi nostrum blanditiis obcaecati itaque debitis quisquam iusto vel voluptates dolore in cum fugiat odit illum exercitationem totam est reiciendis provident a tempora animi? Voluptatum voluptate ipsam hic distinctio veritatis animi fuga, numquam rem nobis?</p>
+
+
+    // row += '<div value="' + data.data[x].commentId + '" class="comment clearfix">';
+        // row += '<img src="assets/img/comments-2.jpg" class="comment-img  float-left" alt="">';
+        // row += ' <h5><a href="">"' + data.data[x].name + '"</a> </h5>';
+        // row += '<p>"' + data.data[x].comment + '"</p>';
+    
+        // row += '<span class="p-1" id="' + " divCommentLike" + "{{$business->id}}" + data.data[x].commentId + '" >' ; //
+            row +=' <button onclick="commentLike(' + "{{Auth::user()->id}}" + ',' + "{{$business->id}}" + ',' +
+            data.data[x].commentId + ')" class="text-danger ">Like</button>' ; // row +='</span>' ; // row
+            +='<span class="p-1" id="' + "divCommentDislike" + "{{$business->id}}" + data.data[x].commentId + '">' ; // row
+            +=' <button onclick="commentDislike(' + "{{Auth::user()->id}}" + ',' + "{{$business->id}}" + ',' +
+            data.data[x].commentId + ')" class="text-danger ">Dislike</button>' ; // row +='</span>' ; // row +='</div>' ;
+</body>
+</html>
+
+
+// $('#allComments{{$business->businessId}}').append(row);
+// $('#commentText{{$business->businessId}}').val('');
+// var count = parseInt($('#commentCount{{$business->businessId}}').html()) + 1;
+// $('#commentCount{{$business->businessId}}').html(count);
